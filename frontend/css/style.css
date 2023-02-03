@@ -1,7 +1,14 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: black;
   color: cadetblue;
   font-family: 'Montserrat', sans-serif;
+  /* position: relative; */
 }
 
 h1 {
@@ -12,23 +19,58 @@ h1 {
 div {
   width: 200px;
   height: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border: 10px solid blue;
 
-  padding-top: 8px;
+  /* padding-top: 8px;
   padding-right: 80px;
   padding-bottom: 120px;
-  padding-left: 40px;
-
-  border: 10px solid blue;
+  padding-left: 40px; */
 
   /* margin-top: 50px;
   margin-right: 5px;
   margin-bottom: 100px;
   margin-left: 10px; */
 
-  margin: auto;
+  /* 
+  ===========================
+  horizontal & vertical align 
+  ===========================
+  */
 
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  /* simple way */
+  /* margin: 0 auto;
+  text-align: center;
+  padding: 70px 0; */
+
+  /* with line height */
+  margin: 0 auto;
+  line-height: 180px;
+  text-align: center;
+
+
+  /* using position & transform */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 70px 0; */
+
+  /* 
+  ================
+  border radius 
+  ================
+  */
+  border-radius: 50%;
+}
+
+div > p {
+  margin: 0;
+  display: inline-block;
+  line-height: 1.5;
+
 }
 
 article > span {
